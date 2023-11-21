@@ -1,15 +1,70 @@
-<!--Ernestas Krikščiūnas-->>
-
 <!DOCTYPE html>
 <html lang="lt">
-
-<html>
   <head>
-    <meta charset='UTF-8'>
+    <meta charset="UTF-8">
     <title>8 laboratorinis darbas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <style>
+      header {
+  background-color: #343a40;
+  padding: 10px;
+  color: #6c757d;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #495057;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+section h2 {
+  color: #6c757d;
+}
+
+section p {
+  color: #6c757d;
+}
+
+video,
+audio {
+  width: 100%;
+  border-radius: 5px; 
+  margin-top: 10px;
+}
+    </style>
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="bg-dark text-white">
         <div class="d-flex flex-column">
             <nav>
                 <ul>
@@ -25,32 +80,36 @@
     <section id="about">
         <h2>Apie</h2>
         <p>Tai yra mano asmeninė svetainė</p>
-        <img src="nuotraukos\thumb.png" alt="..." height="400px" width="400px">
-
+        <img src="nuotraukos\thumb.png" alt="..." class="img-fluid">
     </section>
     
     <section id="resume">
         <h2>Aprašymas</h2>
         <p>Atliekame aukštos kokybės statybos darbus</p>
-        <img src="nuotraukos\eng.jpg" alt="..." height="400px" width="400px">
+        <img src="nuotraukos\eng.jpg" alt="..." class="img-fluid">
     </section>
     
     <section id="portfolio">
         <h2>Atlikti darbai</h2>
         <p>Turime keleta darbo pavyzdžių</p>
-        <img src="nuotraukos\gizos.png" alt="..." height="300px" width="300px">
-        <img src="nuotraukos\ateitis.jpg" alt="..." height="300px" width="300px">
-        <img src="nuotraukos\pizos.png" alt="..." height="300px" width="300px">
+        <img src="nuotraukos\gizos.png" alt="..." class="img-fluid">
+        <img src="nuotraukos\ateitis.jpg" alt="..." class="img-fluid">
+        <img src="nuotraukos\pizos.png" alt="..." class="img-fluid">
     </section>
 
     <section id="services">
         <h2>Paslaugos</h2>
         <p>Patys atvažiuojame, pasirūpiname medžiagomis, pastatome.</p>
-        <video idth="560" height="315" controls>
+        <video width="560" height="315" controls>
             <source src="video/ban.mp4" type="video/mp4">
         </video>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-lVop-JCd0?si=OET5d276ki7v2r0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <audio idth="560" height="315" controls>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-lVop-JCd0?si=OET5d276ki7v2r0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <audio width="560" height="315" controls>
             <source src="video/ban.mp3" type="audio/mp3">
         </audio>
+    <a href="javascript:window.print()" class="print-link">Spausdinti</a>
+
     </section>
+
+  </body>
 </html>
