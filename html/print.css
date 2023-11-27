@@ -1,0 +1,37 @@
+body {
+    font-family: serif;
+  }
+  
+  section {
+    page-break-inside: avoid;
+  }
+  
+  header,
+  nav,
+  .video,
+  iframe,
+  audio {
+    display: none;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  section h2,
+  section p {
+    text-align: left;
+  }
+  
+  .print-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #services{
+    display: none;
+  }
