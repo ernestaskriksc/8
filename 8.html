@@ -2,114 +2,299 @@
 <html lang="lt">
   <head>
     <meta charset="UTF-8">
-    <title>8 laboratorinis darbas</title>
+    <title>10 laboratorinis darbas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <style>
+      
       header {
-  background-color: #343a40;
-  padding: 10px;
-  color: #6c757d;
+        background-color: #343a40;
+        padding: 10px;
+        color: #6c757d;
+        text-align: center;
+      }
+
+      header img {
+        max-width: 200px;
+        height: auto;
+      }
+      
+      #about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-nav ul {
+#about img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#resume img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+}
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin-right: 10px;
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  font-size: 24px; 
+  cursor: pointer; 
+  margin: 5px; 
+  text-decoration: none;
+        color: #6c757d;
+        font-weight: bold;
+}
+
+.contact-info i:hover {
+  color: #495057; 
+}
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #6c757d;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #495057;
+      }
+      .nav-links ul {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
+.nav-links li {
   margin-right: 20px;
 }
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+.social-links {
+  display: flex;
+  align-items: flex-end;
+}
 
-nav a {
+.social-links i {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px;
   text-decoration: none;
   color: #6c757d;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #495057;
+.social-links i:hover {
+  color: #495057; 
 }
 
-section {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
 }
 
-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-top: 10px;
+#portfolio img {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
 }
 
-section h2 {
-  color: #6c757d;
-}
-
-section p {
-  color: #6c757d;
-}
-
-video,
-audio {
+#portfolio h2,
+#portfolio p {
   width: 100%;
-  border-radius: 5px; 
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#services video,
+#services iframe,
+#services audio {
+  width: calc(33.33% - 20px);
+  margin: 10px; 
+}
+
+      footer {
+        background-color: #343a40;
+        color: #6c757d;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 100%; 
+        margin: 0 auto; 
+      }
+
+      .footer-icons a {
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      footer img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+      
+
     </style>
   </head>
   <body>
     <header id="header" class="bg-dark text-white">
-        <div class="d-flex flex-column">
-            <nav>
-                <ul>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Apie</span></a></li>
-                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aprašymas</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atlikti darbai</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Paslaugos</span></a></li>
-                </ul>
-            </nav>
+      <div class="nav-links">
+        <div class="d-flex flex-column justify-content-end">
+          <nav>
+            <ul>
+              <li class="contact-info"><img src="nuotraukos\elektronikos.png" alt="..." height="300px" width="300px"></li>
+              <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Apie</span></a></li>
+              <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aprašymas</span></a></li>
+              <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atlikti darbai</span></a></li>
+              <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Paslaugos</span></a></li>
+              <li class="social-links">
+                <i class="fab fa-twitter" onclick="window.open('http://www.twitter.com/ernestas', '_blank')"></i>
+                <i class="fab fa-instagram" onclick="window.open('http://www.instagram.com/ernestas', '_blank')"></i>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <section id="about">
-        <h2>Apie</h2>
-        <p>Tai yra mano asmeninė svetainė</p>
-        <img src="nuotraukos\thumb.png" alt="..." class="img-fluid">
+      <h2>Apie</h2>
+      <p>Tai yra mano asmeninė svetainė</p>
+      <img src="nuotraukos\thumb.png" alt="..." class="img-fluid" width="400" height="400">
     </section>
-    
+
     <section id="resume">
-        <h2>Aprašymas</h2>
-        <p>Atliekame aukštos kokybės statybos darbus</p>
-        <img src="nuotraukos\eng.jpg" alt="..." class="img-fluid">
+      <h2>Aprašymas</h2>
+      <p>Atliekame aukštos kokybės statybos darbus</p>
+      <img src="nuotraukos\eng.jpg" alt="..." class="img-fluid" width="400" height="400"><br>
+      <a href="javascript:window.print()" class="print-link">Spausdinti</a>
     </section>
-    
+
     <section id="portfolio">
-        <h2>Atlikti darbai</h2>
-        <p>Turime keleta darbo pavyzdžių</p>
-        <img src="nuotraukos\gizos.png" alt="..." class="img-fluid">
-        <img src="nuotraukos\ateitis.jpg" alt="..." class="img-fluid">
-        <img src="nuotraukos\pizos.png" alt="..." class="img-fluid">
+      <h2>Atlikti darbai</h2>
+      <p>Turime keleta darbo pavyzdžių</p>
+      <img src="nuotraukos\gizos.png" alt="..." class="img-fluid" width="300" height="300">
+      <img src="nuotraukos\ateitis.jpg" alt="..." class="img-fluid" width="300" height="300">
+      <img src="nuotraukos\pizos.png" alt="..." class="img-fluid" width="300" height="300">
     </section>
 
     <section id="services">
-        <h2>Paslaugos</h2>
-        <p>Patys atvažiuojame, pasirūpiname medžiagomis, pastatome.</p>
-        <video width="560" height="315" controls>
-            <source src="video/ban.mp4" type="video/mp4">
-        </video>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-lVop-JCd0?si=OET5d276ki7v2r0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <audio width="560" height="315" controls>
-            <source src="video/ban.mp3" type="audio/mp3">
-        </audio>
-    <a href="javascript:window.print()" class="print-link">Spausdinti</a>
-
+      <h2>Paslaugos</h2>
+      <p>Patys atvažiuojame, pasirūpiname medžiagomis, pastatome.</p>
+      <video width="560" height="315" controls>
+        <source src="video/ban.mp4" type="video/mp4">
+      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L-lVop-JCd0?si=OET5d276ki7v2r0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <audio width="560" height="315" controls>
+        <source src="video/ban.mp3" type="audio/mp3">
+      </audio>
     </section>
 
+    <footer class="footer-content">
+      <img src="nuotraukos\elektronikos.png" alt="..." height="300px" width="300px">
+      <p>Kontaktai:<br>
+      Ernestas Krikščiūnas<br>
+      ernestas.kriksciunas@stud.vilniustech.lt<br>
+      </p>
+    </footer>
   </body>
 </html>
