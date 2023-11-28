@@ -19,7 +19,11 @@
         max-width: 200px;
         height: auto;
       }
-      
+      #header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
       #about {
   display: flex;
   flex-direction: column;
@@ -73,7 +77,7 @@
 }
 
 .contact-info i {
-  font-size: 24px; 
+  font-size: 24px;
   cursor: pointer; 
   margin: 5px; 
   text-decoration: none;
@@ -82,7 +86,7 @@
 }
 
 .contact-info i:hover {
-  color: #495057; 
+  color: #495057;
 }
 
       nav ul {
@@ -121,7 +125,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 .social-links {
   display: flex;
@@ -139,13 +143,14 @@
 }
 
 .social-links i:hover {
-  color: #495057; 
+  color: #495057;
 }
 
+      
 #portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -201,7 +206,7 @@
 #services iframe,
 #services audio {
   width: calc(33.33% - 20px);
-  margin: 10px; 
+  margin: 10px;
 }
 
       footer {
@@ -214,8 +219,8 @@
       }
 
       .footer-content {
-        max-width: 100%; 
-        margin: 0 auto; 
+        max-width: 100%;
+        margin: 0 auto;
       }
 
       .footer-icons a {
@@ -255,6 +260,10 @@
         </div>
       </div>
     </header>
+    
+    
+    
+    
 
     <section id="about">
       <h2>Apie</h2>
