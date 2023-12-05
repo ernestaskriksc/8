@@ -2,10 +2,13 @@
 <html lang="lt">
   <head>
     <meta charset="UTF-8">
-    <title>10 laboratorinis darbas</title>
+    <title>11 laboratorinis darbas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="print.css" media="print">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     <style>
       
       header {
@@ -239,6 +242,26 @@
       
 
     </style>
+    <script>
+      function updateClock() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+    
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+    
+        var timeString = hours + ":" + minutes + ":" + seconds;
+    
+        document.getElementById("clock").innerText = timeString;
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock();
+
+    </script>
   </head>
   <body>
     <header id="header" class="bg-dark text-white">
@@ -260,10 +283,6 @@
         </div>
       </div>
     </header>
-    
-    
-    
-    
 
     <section id="about">
       <h2>Apie</h2>
@@ -296,9 +315,47 @@
       <audio width="560" height="315" controls>
         <source src="video/ban.mp3" type="audio/mp3">
       </audio>
+      <div>
+        <h3>Formulė:</h3>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mrow>
+            <mi>f</mi>
+            <mo>(</mo>
+            <mi>a</mi>
+            <mo>)</mo>
+            <mo>=</mo>
+          </mrow>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mi>&#960;</mi>
+                <mi>i</mi>
+              </mrow>
+            </mfrac>
+            <mo>&#x222E;</mo>
+          </mrow>
+          <mrow>
+            <mfrac>
+              <mi>f(z)</mi>
+              <mrow>
+                <mi>z</mi>
+                <mo>-</mo>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+            <mi>dz</mi>
+          </mrow>
+        </math>
+        
+        
+        
+    </div>
     </section>
 
     <footer class="footer-content">
+      <div id="clock" style="font-size: 24px; margin-top: 20px;"></div>
       <img src="nuotraukos\elektronikos.png" alt="..." height="300px" width="300px">
       <p>Kontaktai:<br>
       Ernestas Krikščiūnas<br>
